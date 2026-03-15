@@ -8,7 +8,7 @@
       href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
-      <link rel="icon" type="image/png" href="/hoahoc15/favicon.ico">
+    <link rel="icon" type="image/png" href="./hoahoc15/favicon.ico" />
     <style>
       :root {
         --bg-color: #fff5f8;
@@ -217,7 +217,7 @@
         border: none;
         padding: 5px 12px;
         border-radius: 20px;
-        font-family: 'Quicksand', sans-serif;
+        font-family: "Quicksand", sans-serif;
         font-weight: bold;
         cursor: pointer;
         font-size: 0.8rem;
@@ -250,8 +250,17 @@
         transition: all 0.2s;
       }
 
-      .tf-btn.reveal-correct { background-color: var(--correct-bg); border-color: var(--correct-border); color: #155724; font-weight: bold; }
-      .tf-btn.reveal-wrong { background-color: var(--wrong-bg); border-color: var(--wrong-border); color: #721c24; }
+      .tf-btn.reveal-correct {
+        background-color: var(--correct-bg);
+        border-color: var(--correct-border);
+        color: #155724;
+        font-weight: bold;
+      }
+      .tf-btn.reveal-wrong {
+        background-color: var(--wrong-bg);
+        border-color: var(--wrong-border);
+        color: #721c24;
+      }
 
       .short-input {
         padding: 8px 12px;
@@ -364,7 +373,7 @@
         padding-bottom: 8px;
         text-align: left;
       }
-      
+
       .team-members p:last-child {
         border-bottom: none;
         padding-bottom: 0;
@@ -403,10 +412,12 @@
         <p>Kim loại tồn tại trong vỏ Trái Đất dưới hai dạng cơ bản:</p>
         <ul>
           <li>
-            <strong>Đơn chất:</strong> Kim loại hoạt động hóa học yếu (Vàng, Bạch kim...).
+            <strong>Đơn chất:</strong> Kim loại hoạt động hóa học yếu (Vàng,
+            Bạch kim...).
           </li>
           <li>
-            <strong>Hợp chất:</strong> Tồn tại trong các loại quặng như oxit, sunfua, muối... (Sắt, Nhôm, Đồng...).
+            <strong>Hợp chất:</strong> Tồn tại trong các loại quặng như oxit,
+            sunfua, muối... (Sắt, Nhôm, Đồng...).
           </li>
         </ul>
       </div>
@@ -417,19 +428,20 @@
         <h3>A. Nhiệt luyện & Thủy luyện (Kim loại sau Al)</h3>
         <div class="method-grid">
           <div class="card">
-            <strong>Nhiệt luyện:</strong> Khử oxit kim loại bằng chất khử (C, CO, H2) ở nhiệt độ cao.
+            <strong>Nhiệt luyện:</strong> Khử oxit kim loại bằng chất khử (C,
+            CO, H2) ở nhiệt độ cao.
             <span class="equation">Fe₂O₃ + 3CO → 2Fe + 3CO₂</span>
             <div class="image-container-abs" id="sim1">
               <img
                 id="raw_iron"
-                src="/hoahoc15/raw_iron.png"
+                src="./hoahoc15/raw_iron.png"
                 alt="mảnh sắt thô"
                 draggable="true"
                 ondragstart="dragstartHandler(event)"
               />
               <img
                 id="furnace_unlit"
-                src="/hoahoc15/furnace_unlit.webp"
+                src="./hoahoc15/furnace_unlit.webp"
                 alt="lò nung chưa đốt"
                 ondrop="dropHandler(event)"
                 ondragover="dragoverHandler(event)"
@@ -437,19 +449,20 @@
             </div>
           </div>
           <div class="card">
-            <strong>Thủy luyện:</strong> Dùng dung dịch hòa tan và kim loại mạnh để đẩy kim loại yếu.
+            <strong>Thủy luyện:</strong> Dùng dung dịch hòa tan và kim loại mạnh
+            để đẩy kim loại yếu.
             <span class="equation">Fe + CuSO₄ → FeSO₄ + Cu</span>
             <div class="image-container-abs" id="sim2">
               <img
                 id="iron_ingot"
-                src="/hoahoc15/iron_ingot.png"
+                src="./hoahoc15/iron_ingot.png"
                 alt="mảnh sắt"
                 draggable="true"
                 ondragstart="dragstartHandler(event)"
               />
               <img
                 id="copper(II)sulfate"
-                src="/hoahoc15/copper(II)sulfate.png"
+                src="./hoahoc15/copper(II)sulfate.png"
                 alt="dung dịch copper(II)sulfate"
                 ondrop="dropHandler(event)"
                 ondragover="dragoverHandler(event)"
@@ -463,165 +476,315 @@
           <div class="question-item" id="q-mc-1">
             <div class="q-header">
               <p>Câu 1: Phương pháp thủy luyện dùng để tách kim loại nào?</p>
-              <button class="reset-btn" onclick="resetQuestion('q-mc-1')">Làm lại</button>
+              <button class="reset-btn" onclick="resetQuestion('q-mc-1')">
+                Làm lại
+              </button>
             </div>
-            <div class="option" data-correct="false" onclick="processMC(this)">A. Kim loại hoạt động hóa học mạnh</div>
-            <div class="option" data-correct="false" onclick="processMC(this)">B. Kim loại hoạt động hóa học yếu</div>
-            <div class="option" data-correct="false" onclick="processMC(this)">C. Kim loại hoạt động hóa học trung bình</div>
-            <div class="option" data-correct="true" onclick="processMC(this)">D. Kim loại hoạt động hóa học trung bình và yếu</div>
-            <div class="explanation-box">Kết quả: Đáp án D đúng. Phương pháp thủy luyện thường dùng cho các kim loại từ sau Al trở đi.</div>
+            <div class="option" data-correct="false" onclick="processMC(this)">
+              A. Kim loại hoạt động hóa học mạnh
+            </div>
+            <div class="option" data-correct="false" onclick="processMC(this)">
+              B. Kim loại hoạt động hóa học yếu
+            </div>
+            <div class="option" data-correct="false" onclick="processMC(this)">
+              C. Kim loại hoạt động hóa học trung bình
+            </div>
+            <div class="option" data-correct="true" onclick="processMC(this)">
+              D. Kim loại hoạt động hóa học trung bình và yếu
+            </div>
+            <div class="explanation-box">
+              Kết quả: Đáp án D đúng. Phương pháp thủy luyện thường dùng cho các
+              kim loại từ sau Al trở đi.
+            </div>
           </div>
 
           <div class="question-item" id="q-mc-2">
             <div class="q-header">
-              <p>Câu 2: Ở nhiệt độ cao, chất nào sau đây không khử được Fe2O3?</p>
-              <button class="reset-btn" onclick="resetQuestion('q-mc-2')">Làm lại</button>
+              <p>
+                Câu 2: Ở nhiệt độ cao, chất nào sau đây không khử được Fe2O3?
+              </p>
+              <button class="reset-btn" onclick="resetQuestion('q-mc-2')">
+                Làm lại
+              </button>
             </div>
-            <div class="option" data-correct="true" onclick="processMC(this)">A. CO2</div>
-            <div class="option" data-correct="false" onclick="processMC(this)">B. Al</div>
-            <div class="option" data-correct="false" onclick="processMC(this)">C. CO</div>
-            <div class="option" data-correct="false" onclick="processMC(this)">D. H2</div>
-            <div class="explanation-box">Kết quả: Đáp án A đúng. Vì CO2 có tính oxi hoá, không có tính khử. Các chất Al, CO, H2 đều là chất khử mạnh ở nhiệt độ cao.</div>
+            <div class="option" data-correct="true" onclick="processMC(this)">
+              A. CO2
+            </div>
+            <div class="option" data-correct="false" onclick="processMC(this)">
+              B. Al
+            </div>
+            <div class="option" data-correct="false" onclick="processMC(this)">
+              C. CO
+            </div>
+            <div class="option" data-correct="false" onclick="processMC(this)">
+              D. H2
+            </div>
+            <div class="explanation-box">
+              Kết quả: Đáp án A đúng. Vì CO2 có tính oxi hoá, không có tính khử.
+              Các chất Al, CO, H2 đều là chất khử mạnh ở nhiệt độ cao.
+            </div>
           </div>
 
           <div class="question-item" id="q-mc-4">
             <div class="q-header">
-              <p>Câu 3: Kim loại nào sau đây điều chế được bằng phương pháp nhiệt luyện với chất khử là H2?</p>
-              <button class="reset-btn" onclick="resetQuestion('q-mc-4')">Làm lại</button>
+              <p>
+                Câu 3: Kim loại nào sau đây điều chế được bằng phương pháp nhiệt
+                luyện với chất khử là H2?
+              </p>
+              <button class="reset-btn" onclick="resetQuestion('q-mc-4')">
+                Làm lại
+              </button>
             </div>
-            <div class="option" data-correct="false" onclick="processMC(this)">A. K</div>
-            <div class="option" data-correct="false" onclick="processMC(this)">B. Na</div>
-            <div class="option" data-correct="true" onclick="processMC(this)">C. Fe</div>
-            <div class="option" data-correct="false" onclick="processMC(this)">D. Ca</div>
-            <div class="explanation-box">Kết quả: Đáp án C đúng. Vì Fe đứng sau Al trong dãy hoạt động hóa học và có thể bị khử bởi H2.</div>
+            <div class="option" data-correct="false" onclick="processMC(this)">
+              A. K
+            </div>
+            <div class="option" data-correct="false" onclick="processMC(this)">
+              B. Na
+            </div>
+            <div class="option" data-correct="true" onclick="processMC(this)">
+              C. Fe
+            </div>
+            <div class="option" data-correct="false" onclick="processMC(this)">
+              D. Ca
+            </div>
+            <div class="explanation-box">
+              Kết quả: Đáp án C đúng. Vì Fe đứng sau Al trong dãy hoạt động hóa
+              học và có thể bị khử bởi H2.
+            </div>
           </div>
 
           <div class="question-item" id="q-mc-5">
             <div class="q-header">
-              <p>Câu 4: Cho luồng khí CO dư qua hỗn hợp các oxide CuO, Fe2O3, Al2O3, MgO nung nóng ở nhiệt độ cao. Sau phản ứng, hỗn hợp chất rắn thu được gồm:</p>
-              <button class="reset-btn" onclick="resetQuestion('q-mc-5')">Làm lại</button>
+              <p>
+                Câu 4: Cho luồng khí CO dư qua hỗn hợp các oxide CuO, Fe2O3,
+                Al2O3, MgO nung nóng ở nhiệt độ cao. Sau phản ứng, hỗn hợp chất
+                rắn thu được gồm:
+              </p>
+              <button class="reset-btn" onclick="resetQuestion('q-mc-5')">
+                Làm lại
+              </button>
             </div>
-            <div class="option" data-correct="false" onclick="processMC(this)">A. Cu, Fe, Al, Mg.</div>
-            <div class="option" data-correct="false" onclick="processMC(this)">B. Cu, FeO, Al2O3, MgO.</div>
-            <div class="option" data-correct="true" onclick="processMC(this)">C. Cu, Fe, Al2O3, MgO.</div>
-            <div class="option" data-correct="false" onclick="processMC(this)">D. Cu, Fe, Al, MgO.</div>
-            <div class="explanation-box">Kết quả: Đáp án C đúng. Vì CO chỉ khử được oxide của kim loại đứng sau Al (là CuO và Fe2O3), Al2O3 và MgO giữ nguyên.</div>
+            <div class="option" data-correct="false" onclick="processMC(this)">
+              A. Cu, Fe, Al, Mg.
+            </div>
+            <div class="option" data-correct="false" onclick="processMC(this)">
+              B. Cu, FeO, Al2O3, MgO.
+            </div>
+            <div class="option" data-correct="true" onclick="processMC(this)">
+              C. Cu, Fe, Al2O3, MgO.
+            </div>
+            <div class="option" data-correct="false" onclick="processMC(this)">
+              D. Cu, Fe, Al, MgO.
+            </div>
+            <div class="explanation-box">
+              Kết quả: Đáp án C đúng. Vì CO chỉ khử được oxide của kim loại đứng
+              sau Al (là CuO và Fe2O3), Al2O3 và MgO giữ nguyên.
+            </div>
           </div>
 
           <!-- Đúng sai -->
           <div class="question-item" id="q-tf-1">
             <div class="q-header">
-              <p>Câu 5 (Đúng/Sai): Hình vẽ sau đây mô tả thí nghiệm khí X tác dụng với chất rắn Y, nung nóng sinh ra khí Z.</p>
-              <button class="reset-btn" onclick="resetQuestion('q-tf-1')">Làm lại</button>
+              <p>
+                Câu 5 (Đúng/Sai): Hình vẽ sau đây mô tả thí nghiệm khí X tác
+                dụng với chất rắn Y, nung nóng sinh ra khí Z.
+              </p>
+              <button class="reset-btn" onclick="resetQuestion('q-tf-1')">
+                Làm lại
+              </button>
             </div>
             <div class="img-placeholder"></div>
             <table class="true-false-table">
               <tr data-ans="true">
-                <td>a. Khí X là chất khí không màu, không mùi, ít tan trong nước, rất độc.</td>
-                <td style="white-space: nowrap;">
-                  <button class="tf-btn" onclick="processTF(this, true)">Đúng</button>
-                  <button class="tf-btn" onclick="processTF(this, false)">Sai</button>
+                <td>
+                  a. Khí X là chất khí không màu, không mùi, ít tan trong nước,
+                  rất độc.
+                </td>
+                <td style="white-space: nowrap">
+                  <button class="tf-btn" onclick="processTF(this, true)">
+                    Đúng
+                  </button>
+                  <button class="tf-btn" onclick="processTF(this, false)">
+                    Sai
+                  </button>
                 </td>
               </tr>
               <tr data-ans="true">
                 <td>b. Khí Z là nguyên nhân gây hiệu ứng nhà kính.</td>
-                <td style="white-space: nowrap;">
-                  <button class="tf-btn" onclick="processTF(this, true)">Đúng</button>
-                  <button class="tf-btn" onclick="processTF(this, false)">Sai</button>
+                <td style="white-space: nowrap">
+                  <button class="tf-btn" onclick="processTF(this, true)">
+                    Đúng
+                  </button>
+                  <button class="tf-btn" onclick="processTF(this, false)">
+                    Sai
+                  </button>
                 </td>
               </tr>
               <tr data-ans="true">
-                <td>c. Phương trình tạo ra khí Z là CuO + CO (t°) → Cu + CO2.</td>
-                <td style="white-space: nowrap;">
-                  <button class="tf-btn" onclick="processTF(this, true)">Đúng</button>
-                  <button class="tf-btn" onclick="processTF(this, false)">Sai</button>
+                <td>
+                  c. Phương trình tạo ra khí Z là CuO + CO (t°) → Cu + CO2.
+                </td>
+                <td style="white-space: nowrap">
+                  <button class="tf-btn" onclick="processTF(this, true)">
+                    Đúng
+                  </button>
+                  <button class="tf-btn" onclick="processTF(this, false)">
+                    Sai
+                  </button>
                 </td>
               </tr>
               <tr data-ans="false">
-                <td>d. Thí nghiệm được sử dụng để điều chế kim loại nhóm IA, IIA.</td>
-                <td style="white-space: nowrap;">
-                  <button class="tf-btn" onclick="processTF(this, true)">Đúng</button>
-                  <button class="tf-btn" onclick="processTF(this, false)">Sai</button>
+                <td>
+                  d. Thí nghiệm được sử dụng để điều chế kim loại nhóm IA, IIA.
+                </td>
+                <td style="white-space: nowrap">
+                  <button class="tf-btn" onclick="processTF(this, true)">
+                    Đúng
+                  </button>
+                  <button class="tf-btn" onclick="processTF(this, false)">
+                    Sai
+                  </button>
                 </td>
               </tr>
             </table>
-            <div class="explanation-box">Giải thích ý (d): Sai, vì phương pháp nhiệt luyện chỉ dùng để điều chế kim loại hoạt động trung bình và yếu.</div>
+            <div class="explanation-box">
+              Giải thích ý (d): Sai, vì phương pháp nhiệt luyện chỉ dùng để điều
+              chế kim loại hoạt động trung bình và yếu.
+            </div>
           </div>
 
           <!-- Trả lời ngắn -->
           <div class="question-item" id="q-sa-1">
             <div class="q-header">
-              <p>Câu 6: Dẫn khí CO dư qua ống sứ đựng 16 gam Fe2O3 nung nóng, sau khi phản ứng xảy ra hoàn toàn thu được m gam kim loại. Giá trị của m là bao nhiêu?</p>
-              <button class="reset-btn" onclick="resetQuestion('q-sa-1')">Làm lại</button>
+              <p>
+                Câu 6: Dẫn khí CO dư qua ống sứ đựng 16 gam Fe2O3 nung nóng, sau
+                khi phản ứng xảy ra hoàn toàn thu được m gam kim loại. Giá trị
+                của m là bao nhiêu?
+              </p>
+              <button class="reset-btn" onclick="resetQuestion('q-sa-1')">
+                Làm lại
+              </button>
             </div>
-            <div style="margin-top: 10px;">
-              <input type="text" class="short-input" placeholder="Nhập số gam...">
-              <button class="short-btn" onclick="processShort(this, '16.8', '16,8')">Kiểm tra</button>
+            <div style="margin-top: 10px">
+              <input
+                type="text"
+                class="short-input"
+                placeholder="Nhập số gam..."
+              />
+              <button
+                class="short-btn"
+                onclick="processShort(this, '16.8', '16,8')"
+              >
+                Kiểm tra
+              </button>
             </div>
             <div class="explanation-box">
-              <strong>Đáp án: 16,8 gam.</strong><br/>
-              Giải chi tiết theo dữ kiện:<br/>
-              3CO + Fe2O3 (t°) → 2Fe + 3CO2<br/>
-              Ta có nFe = 3nFe2O3 = 0,3 mol.<br/>
+              <strong>Đáp án: 16,8 gam.</strong><br />
+              Giải chi tiết theo dữ kiện:<br />
+              3CO + Fe2O3 (t°) → 2Fe + 3CO2<br />
+              Ta có nFe = 3nFe2O3 = 0,3 mol.<br />
               Khối lượng Fe thu được là mFe = 0,3 * 56 = 16,8 gam.
             </div>
           </div>
 
           <div class="question-item" id="q-sa-3">
             <div class="q-header">
-              <p>Câu 7: Cho hỗn hợp X gồm các oxide MgO, Fe2O3, CuO, Na2O, ZnO. Cho khí CO (dư) tác dụng với X, có bao nhiêu kim loại thu được sau phản ứng?</p>
-              <button class="reset-btn" onclick="resetQuestion('q-sa-3')">Làm lại</button>
+              <p>
+                Câu 7: Cho hỗn hợp X gồm các oxide MgO, Fe2O3, CuO, Na2O, ZnO.
+                Cho khí CO (dư) tác dụng với X, có bao nhiêu kim loại thu được
+                sau phản ứng?
+              </p>
+              <button class="reset-btn" onclick="resetQuestion('q-sa-3')">
+                Làm lại
+              </button>
             </div>
-            <div style="margin-top: 10px;">
-              <input type="text" class="short-input" placeholder="Nhập số lượng kim loại...">
-              <button class="short-btn" onclick="processShort(this, '3')">Kiểm tra</button>
+            <div style="margin-top: 10px">
+              <input
+                type="text"
+                class="short-input"
+                placeholder="Nhập số lượng kim loại..."
+              />
+              <button class="short-btn" onclick="processShort(this, '3')">
+                Kiểm tra
+              </button>
             </div>
             <div class="explanation-box">
-              <strong>Đáp án: 3 kim loại.</strong><br/>
-              Giải thích: CO khử các oxide kim loại đứng sau Al tạo thành kim loại. Các kim loại thu được là: Fe, Cu, Zn.
+              <strong>Đáp án: 3 kim loại.</strong><br />
+              Giải thích: CO khử các oxide kim loại đứng sau Al tạo thành kim
+              loại. Các kim loại thu được là: Fe, Cu, Zn.
             </div>
           </div>
 
           <div class="question-item" id="q-sa-2">
             <div class="q-header">
-              <p>Câu 8: Khi tách kim loại Ag từ Ag2S bằng phương pháp cyanide.<br/>
-                (1) Dùng NaCN để hòa tan Ag2S<br/>
-                (2) Dùng Zn để khử cation Ag+ trong phức<br/>
-                (3) Cuối cùng dùng HNO3 để loại bỏ kẽm còn dư.<br/>
-                (4) Đây là phương pháp thủy luyện để tách kim loại.<br/>
+              <p>
+                Câu 8: Khi tách kim loại Ag từ Ag2S bằng phương pháp cyanide.<br />
+                (1) Dùng NaCN để hòa tan Ag2S<br />
+                (2) Dùng Zn để khử cation Ag+ trong phức<br />
+                (3) Cuối cùng dùng HNO3 để loại bỏ kẽm còn dư.<br />
+                (4) Đây là phương pháp thủy luyện để tách kim loại.<br />
                 Số phát biểu đúng là bao nhiêu?
               </p>
-              <button class="reset-btn" onclick="resetQuestion('q-sa-2')">Làm lại</button>
+              <button class="reset-btn" onclick="resetQuestion('q-sa-2')">
+                Làm lại
+              </button>
             </div>
-            <div style="margin-top: 10px;">
-              <input type="text" class="short-input" placeholder="Nhập số lượng...">
-              <button class="short-btn" onclick="processShort(this, '3')">Kiểm tra</button>
+            <div style="margin-top: 10px">
+              <input
+                type="text"
+                class="short-input"
+                placeholder="Nhập số lượng..."
+              />
+              <button class="short-btn" onclick="processShort(this, '3')">
+                Kiểm tra
+              </button>
             </div>
             <div class="explanation-box">
-              <strong>Đáp án: 3.</strong> Các phát biểu đúng bao gồm quy trình hòa tan, khử và phân loại phương pháp thủy luyện.
+              <strong>Đáp án: 3.</strong> Các phát biểu đúng bao gồm quy trình
+              hòa tan, khử và phân loại phương pháp thủy luyện.
             </div>
           </div>
-
         </div>
 
         <h3>B. Điện phân nóng chảy (Kim loại mạnh)</h3>
         <div class="card">
-          <p>Dành cho các kim loại từ <strong>Li đến Al</strong>. Đây là phương pháp dùng dòng điện để khử ion kim loại.</p>
+          <p>
+            Dành cho các kim loại từ <strong>Li đến Al</strong>. Đây là phương
+            pháp dùng dòng điện để khử ion kim loại.
+          </p>
           <p><em>Ví dụ tách Nhôm từ quặng Bôxit:</em></p>
           <span class="equation">2Al₂O₃ (đpnc) → 4Al + 3O₂</span>
-          <iframe width="100%" style="aspect-ratio: 16 / 9;" src="https://www.youtube.com/embed/mvDHeYI-a00?start=56&cc_load_policy=1&cc_lang_pref=en" frameborder="0"></iframe>
+          <iframe
+            width="100%"
+            style="aspect-ratio: 16 / 9"
+            src="https://www.youtube.com/embed/mvDHeYI-a00?start=56&cc_load_policy=1&cc_lang_pref=en"
+            frameborder="0"
+          ></iframe>
         </div>
 
         <div class="quiz-container">
           <div class="question-item" id="q-mc-3">
             <div class="q-header">
-              <p>Câu 1: Trong công nghiệp, Mg được điều chế bằng cách nào dưới đây?</p>
-              <button class="reset-btn" onclick="resetQuestion('q-mc-3')">Làm lại</button>
+              <p>
+                Câu 1: Trong công nghiệp, Mg được điều chế bằng cách nào dưới
+                đây?
+              </p>
+              <button class="reset-btn" onclick="resetQuestion('q-mc-3')">
+                Làm lại
+              </button>
             </div>
-            <div class="option" data-correct="true" onclick="processMC(this)">A. Điện phân nóng chảy MgCl2</div>
-            <div class="option" data-correct="false" onclick="processMC(this)">B. Cho kim loại Fe vào dung dịch MgCl2</div>
-            <div class="option" data-correct="false" onclick="processMC(this)">C. Điện phân dung dịch MgSO4</div>
-            <div class="option" data-correct="false" onclick="processMC(this)">D. Cho kim loại K vào dung dịch Mg(NO3)2</div>
+            <div class="option" data-correct="true" onclick="processMC(this)">
+              A. Điện phân nóng chảy MgCl2
+            </div>
+            <div class="option" data-correct="false" onclick="processMC(this)">
+              B. Cho kim loại Fe vào dung dịch MgCl2
+            </div>
+            <div class="option" data-correct="false" onclick="processMC(this)">
+              C. Điện phân dung dịch MgSO4
+            </div>
+            <div class="option" data-correct="false" onclick="processMC(this)">
+              D. Cho kim loại K vào dung dịch Mg(NO3)2
+            </div>
             <div class="explanation-box">
               Kết quả: Đáp án A đúng. Phương trình: MgCl2 (đpnc) → Mg + Cl2↑
             </div>
@@ -629,43 +792,71 @@
 
           <div class="question-item" id="q-tf-2">
             <div class="q-header">
-              <p>Câu 2 (Đúng/Sai): Điện phân MgCl2 nóng chảy. MgCl2 nóng chảy phân li thành các ion Mg2+ và ion Cl-.</p>
-              <button class="reset-btn" onclick="resetQuestion('q-tf-2')">Làm lại</button>
+              <p>
+                Câu 2 (Đúng/Sai): Điện phân MgCl2 nóng chảy. MgCl2 nóng chảy
+                phân li thành các ion Mg2+ và ion Cl-.
+              </p>
+              <button class="reset-btn" onclick="resetQuestion('q-tf-2')">
+                Làm lại
+              </button>
             </div>
             <table class="true-false-table">
               <tr data-ans="true">
-                <td>a. Cation Mg2+ di chuyển về cực âm (cathode) và anion Cl- di chuyển về cực dương (anode) của bình điện phân.</td>
-                <td style="white-space: nowrap;">
-                  <button class="tf-btn" onclick="processTF(this, true)">Đúng</button>
-                  <button class="tf-btn" onclick="processTF(this, false)">Sai</button>
+                <td>
+                  a. Cation Mg2+ di chuyển về cực âm (cathode) và anion Cl- di
+                  chuyển về cực dương (anode) của bình điện phân.
+                </td>
+                <td style="white-space: nowrap">
+                  <button class="tf-btn" onclick="processTF(this, true)">
+                    Đúng
+                  </button>
+                  <button class="tf-btn" onclick="processTF(this, false)">
+                    Sai
+                  </button>
                 </td>
               </tr>
               <tr data-ans="false">
-                <td>b. Tại cathode xảy ra quá trình oxi hóa: Mg2+ + 2e ⟶ Mg.</td>
-                <td style="white-space: nowrap;">
-                  <button class="tf-btn" onclick="processTF(this, true)">Đúng</button>
-                  <button class="tf-btn" onclick="processTF(this, false)">Sai</button>
+                <td>
+                  b. Tại cathode xảy ra quá trình oxi hóa: Mg2+ + 2e ⟶ Mg.
+                </td>
+                <td style="white-space: nowrap">
+                  <button class="tf-btn" onclick="processTF(this, true)">
+                    Đúng
+                  </button>
+                  <button class="tf-btn" onclick="processTF(this, false)">
+                    Sai
+                  </button>
                 </td>
               </tr>
               <tr data-ans="false">
                 <td>c. Tại anode xảy ra quá trình khử: 2Cl- ⟶ Cl2 + 2e.</td>
-                <td style="white-space: nowrap;">
-                  <button class="tf-btn" onclick="processTF(this, true)">Đúng</button>
-                  <button class="tf-btn" onclick="processTF(this, false)">Sai</button>
+                <td style="white-space: nowrap">
+                  <button class="tf-btn" onclick="processTF(this, true)">
+                    Đúng
+                  </button>
+                  <button class="tf-btn" onclick="processTF(this, false)">
+                    Sai
+                  </button>
                 </td>
               </tr>
               <tr data-ans="false">
-                <td>d. Có thể điều chế Mg từ MgCl2 bằng phương pháp nhiệt luyện.</td>
-                <td style="white-space: nowrap;">
-                  <button class="tf-btn" onclick="processTF(this, true)">Đúng</button>
-                  <button class="tf-btn" onclick="processTF(this, false)">Sai</button>
+                <td>
+                  d. Có thể điều chế Mg từ MgCl2 bằng phương pháp nhiệt luyện.
+                </td>
+                <td style="white-space: nowrap">
+                  <button class="tf-btn" onclick="processTF(this, true)">
+                    Đúng
+                  </button>
+                  <button class="tf-btn" onclick="processTF(this, false)">
+                    Sai
+                  </button>
                 </td>
               </tr>
             </table>
             <div class="explanation-box">
-              Giải thích:<br/>
-              - Ý (b) sai: tại cathode xảy ra quá trình khử.<br/>
-              - Ý (c) sai: tại anode xảy ra quá trình oxi hoá.<br/>
+              Giải thích:<br />
+              - Ý (b) sai: tại cathode xảy ra quá trình khử.<br />
+              - Ý (c) sai: tại anode xảy ra quá trình oxi hoá.<br />
               - Ý (d) sai: Mg chỉ điều chế được bằng điện phân nóng chảy.
             </div>
           </div>
@@ -674,56 +865,102 @@
 
       <div class="section recycle-box">
         <h2>3. Tái chế kim loại</h2>
-        <p>Tái chế là quá trình thu gom và xử lý kim loại phế liệu để tạo ra nguyên liệu mới.</p>
+        <p>
+          Tái chế là quá trình thu gom và xử lý kim loại phế liệu để tạo ra
+          nguyên liệu mới.
+        </p>
         <ul>
-          <li><strong>Lợi ích:</strong> Tiết kiệm tài nguyên, giảm năng lượng sản xuất (Nhôm tái chế tiết kiệm 95% năng lượng).</li>
-          <li><strong>Môi trường:</strong> Giảm thiểu rác thải và khí thải độc hại.</li>
+          <li>
+            <strong>Lợi ích:</strong> Tiết kiệm tài nguyên, giảm năng lượng sản
+            xuất (Nhôm tái chế tiết kiệm 95% năng lượng).
+          </li>
+          <li>
+            <strong>Môi trường:</strong> Giảm thiểu rác thải và khí thải độc
+            hại.
+          </li>
         </ul>
 
         <div class="quiz-container">
-          <div class="question-item" id="q-tf-3" style="background: rgba(255,255,255,0.7);">
+          <div
+            class="question-item"
+            id="q-tf-3"
+            style="background: rgba(255, 255, 255, 0.7)"
+          >
             <div class="q-header">
-              <p>Câu 1 (Đúng/Sai): Tái chế kim loại đã trở thành một phần quan trọng trong quản lý tài nguyên và bảo vệ môi trường.</p>
-              <button class="reset-btn" onclick="resetQuestion('q-tf-3')">Làm lại</button>
+              <p>
+                Câu 1 (Đúng/Sai): Tái chế kim loại đã trở thành một phần quan
+                trọng trong quản lý tài nguyên và bảo vệ môi trường.
+              </p>
+              <button class="reset-btn" onclick="resetQuestion('q-tf-3')">
+                Làm lại
+              </button>
             </div>
             <table class="true-false-table">
               <tr data-ans="true">
-                <td>a) Tái chế kim loại giúp giảm lượng chất thải và tiết kiệm năng lượng.</td>
-                <td style="white-space: nowrap;">
-                  <button class="tf-btn" onclick="processTF(this, true)">Đúng</button>
-                  <button class="tf-btn" onclick="processTF(this, false)">Sai</button>
+                <td>
+                  a) Tái chế kim loại giúp giảm lượng chất thải và tiết kiệm
+                  năng lượng.
+                </td>
+                <td style="white-space: nowrap">
+                  <button class="tf-btn" onclick="processTF(this, true)">
+                    Đúng
+                  </button>
+                  <button class="tf-btn" onclick="processTF(this, false)">
+                    Sai
+                  </button>
                 </td>
               </tr>
               <tr data-ans="false">
-                <td>b) Nhu cầu tái chế kim loại không liên quan đến việc bảo vệ môi trường.</td>
-                <td style="white-space: nowrap;">
-                  <button class="tf-btn" onclick="processTF(this, true)">Đúng</button>
-                  <button class="tf-btn" onclick="processTF(this, false)">Sai</button>
+                <td>
+                  b) Nhu cầu tái chế kim loại không liên quan đến việc bảo vệ
+                  môi trường.
+                </td>
+                <td style="white-space: nowrap">
+                  <button class="tf-btn" onclick="processTF(this, true)">
+                    Đúng
+                  </button>
+                  <button class="tf-btn" onclick="processTF(this, false)">
+                    Sai
+                  </button>
                 </td>
               </tr>
               <tr data-ans="true">
-                <td>c) Tái chế nhôm giúp tiết kiệm năng lượng hơn so với sản xuất nhôm từ quặng bauxite.</td>
-                <td style="white-space: nowrap;">
-                  <button class="tf-btn" onclick="processTF(this, true)">Đúng</button>
-                  <button class="tf-btn" onclick="processTF(this, false)">Sai</button>
+                <td>
+                  c) Tái chế nhôm giúp tiết kiệm năng lượng hơn so với sản xuất
+                  nhôm từ quặng bauxite.
+                </td>
+                <td style="white-space: nowrap">
+                  <button class="tf-btn" onclick="processTF(this, true)">
+                    Đúng
+                  </button>
+                  <button class="tf-btn" onclick="processTF(this, false)">
+                    Sai
+                  </button>
                 </td>
               </tr>
               <tr data-ans="false">
-                <td>d) Kim loại quý như vàng và bạc không được tái chế vì chi phí quá cao.</td>
-                <td style="white-space: nowrap;">
-                  <button class="tf-btn" onclick="processTF(this, true)">Đúng</button>
-                  <button class="tf-btn" onclick="processTF(this, false)">Sai</button>
+                <td>
+                  d) Kim loại quý như vàng và bạc không được tái chế vì chi phí
+                  quá cao.
+                </td>
+                <td style="white-space: nowrap">
+                  <button class="tf-btn" onclick="processTF(this, true)">
+                    Đúng
+                  </button>
+                  <button class="tf-btn" onclick="processTF(this, false)">
+                    Sai
+                  </button>
                 </td>
               </tr>
             </table>
             <div class="explanation-box">
-              Giải thích:<br/>
-              - Ý (b) sai: Tái chế kim loại là để bảo vệ môi trường.<br/>
-              - Ý (d) sai: Kim loại quý được tái chế rất hiệu quả vì giá trị cao của chúng.
+              Giải thích:<br />
+              - Ý (b) sai: Tái chế kim loại là để bảo vệ môi trường.<br />
+              - Ý (d) sai: Kim loại quý được tái chế rất hiệu quả vì giá trị cao
+              của chúng.
             </div>
           </div>
         </div>
-
       </div>
 
       <footer>
@@ -734,122 +971,126 @@
     <script>
       // Xử lý Trắc nghiệm
       function processMC(element) {
-        const questionBlock = element.closest('.question-item');
-        if (questionBlock.classList.contains('answered')) return;
-        
-        const options = questionBlock.querySelectorAll('.option');
-        const explanation = questionBlock.querySelector('.explanation-box');
-        const isCorrect = element.getAttribute('data-correct') === 'true';
+        const questionBlock = element.closest(".question-item");
+        if (questionBlock.classList.contains("answered")) return;
 
-        options.forEach(opt => {
-          opt.classList.add('locked');
-          opt.style.pointerEvents = 'none';
-          if (opt.getAttribute('data-correct') === 'true') {
-            opt.classList.add('correct-answer');
+        const options = questionBlock.querySelectorAll(".option");
+        const explanation = questionBlock.querySelector(".explanation-box");
+        const isCorrect = element.getAttribute("data-correct") === "true";
+
+        options.forEach((opt) => {
+          opt.classList.add("locked");
+          opt.style.pointerEvents = "none";
+          if (opt.getAttribute("data-correct") === "true") {
+            opt.classList.add("correct-answer");
           }
         });
 
         if (!isCorrect) {
-          element.classList.add('wrong-selected');
+          element.classList.add("wrong-selected");
         }
 
-        if (explanation) explanation.style.display = 'block';
-        questionBlock.classList.add('answered');
+        if (explanation) explanation.style.display = "block";
+        questionBlock.classList.add("answered");
       }
 
       // Xử lý Đúng/Sai
       function processTF(btn, userChoice) {
-        const row = btn.closest('tr');
-        if (row.classList.contains('answered')) return;
+        const row = btn.closest("tr");
+        if (row.classList.contains("answered")) return;
 
-        const isTrueStatement = row.getAttribute('data-ans') === 'true';
-        const buttons = row.querySelectorAll('.tf-btn');
+        const isTrueStatement = row.getAttribute("data-ans") === "true";
+        const buttons = row.querySelectorAll(".tf-btn");
 
-        buttons.forEach(b => {
-          const isCorrectBtn = (b.innerText === 'Đúng' && isTrueStatement) || (b.innerText === 'Sai' && !isTrueStatement);
-          b.style.pointerEvents = 'none';
-          
+        buttons.forEach((b) => {
+          const isCorrectBtn =
+            (b.innerText === "Đúng" && isTrueStatement) ||
+            (b.innerText === "Sai" && !isTrueStatement);
+          b.style.pointerEvents = "none";
+
           if (isCorrectBtn) {
-            b.classList.add('reveal-correct');
+            b.classList.add("reveal-correct");
           }
         });
 
         const isUserCorrect = userChoice === isTrueStatement;
         if (!isUserCorrect) {
-          btn.classList.add('reveal-wrong');
+          btn.classList.add("reveal-wrong");
         }
 
-        row.classList.add('answered');
-        
+        row.classList.add("answered");
+
         // Kiểm tra xem tất cả các hàng đã trả lời chưa để hiện giải thích
-        const table = btn.closest('.true-false-table');
-        const allRows = table.querySelectorAll('tr');
+        const table = btn.closest(".true-false-table");
+        const allRows = table.querySelectorAll("tr");
         let allAnswered = true;
-        allRows.forEach(r => {
-          if(!r.classList.contains('answered')) allAnswered = false;
+        allRows.forEach((r) => {
+          if (!r.classList.contains("answered")) allAnswered = false;
         });
 
         if (allAnswered) {
-          const questionBlock = btn.closest('.question-item');
-          const explanation = questionBlock.querySelector('.explanation-box');
-          if (explanation) explanation.style.display = 'block';
+          const questionBlock = btn.closest(".question-item");
+          const explanation = questionBlock.querySelector(".explanation-box");
+          if (explanation) explanation.style.display = "block";
         }
       }
 
       // Xử lý Trả lời ngắn
       function processShort(btn, ...correctAnswers) {
-        const container = btn.closest('.question-item');
-        const input = container.querySelector('.short-input');
-        const explanation = container.querySelector('.explanation-box');
+        const container = btn.closest(".question-item");
+        const input = container.querySelector(".short-input");
+        const explanation = container.querySelector(".explanation-box");
         const val = input.value.trim().toLowerCase();
 
         input.disabled = true;
         btn.disabled = true;
 
         const isCorrect = correctAnswers.includes(val);
-        if(isCorrect) {
-            input.classList.add('correct-answer');
+        if (isCorrect) {
+          input.classList.add("correct-answer");
         } else {
-            input.classList.add('wrong-selected');
-            input.value = val + " (Sai)";
+          input.classList.add("wrong-selected");
+          input.value = val + " (Sai)";
         }
-        
-        if (explanation) explanation.style.display = 'block';
+
+        if (explanation) explanation.style.display = "block";
       }
 
       // Hàm Reset câu hỏi độc lập
       function resetQuestion(qId) {
         const block = document.getElementById(qId);
-        block.classList.remove('answered');
-        
+        block.classList.remove("answered");
+
         // Reset trắc nghiệm
-        block.querySelectorAll('.option').forEach(opt => {
-          opt.classList.remove('locked', 'correct-answer', 'wrong-selected');
-          opt.style.pointerEvents = 'auto';
+        block.querySelectorAll(".option").forEach((opt) => {
+          opt.classList.remove("locked", "correct-answer", "wrong-selected");
+          opt.style.pointerEvents = "auto";
         });
 
         // Reset Đúng/Sai
-        block.querySelectorAll('tr').forEach(tr => tr.classList.remove('answered'));
-        block.querySelectorAll('.tf-btn').forEach(btn => {
-          btn.classList.remove('reveal-correct', 'reveal-wrong');
-          btn.style.pointerEvents = 'auto';
+        block
+          .querySelectorAll("tr")
+          .forEach((tr) => tr.classList.remove("answered"));
+        block.querySelectorAll(".tf-btn").forEach((btn) => {
+          btn.classList.remove("reveal-correct", "reveal-wrong");
+          btn.style.pointerEvents = "auto";
         });
 
         // Reset Trả lời ngắn
-        const input = block.querySelector('.short-input');
+        const input = block.querySelector(".short-input");
         if (input) {
-            input.disabled = false;
-            input.value = '';
-            input.classList.remove('correct-answer', 'wrong-selected');
-            const btn = block.querySelector('.short-btn');
-            if (btn) btn.disabled = false;
+          input.disabled = false;
+          input.value = "";
+          input.classList.remove("correct-answer", "wrong-selected");
+          const btn = block.querySelector(".short-btn");
+          if (btn) btn.disabled = false;
         }
 
         // Ẩn giải thích
-        const explanation = block.querySelector('.explanation-box');
-        if (explanation) explanation.style.display = 'none';
+        const explanation = block.querySelector(".explanation-box");
+        if (explanation) explanation.style.display = "none";
       }
     </script>
-    <script src="/draganddrop.js"></script>
+    <script src="./draganddrop.js"></script>
   </body>
 </html>
